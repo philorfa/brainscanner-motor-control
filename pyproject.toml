@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mwscanner_control"
+version = "0.1.0"
+description = "Control the hardware for the micro-wave scanner"
+authors = [
+    {name="Philippos Orfanoudakis", email="philippos.orfanoudakis@metamaterial.com"},
+	{name="Thomas Vasileiou", email="thomas.vasileiou@metamaterial.com"}
+]
+dependencies = [
+    "numpy",
+    "pyvisa",
+    "matplotlib"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
